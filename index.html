@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../0219/css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/museum_an_style.css">
+</head>
+<!-- 원본 사이트는 position을 자주 사용해서 레이아웃을 잡았으나 여기선 최대한 포지션을 사용하지 않고 만들어봄. -->
+
+<body>
+    <div class="information flex">
+        <ul class="flex">
+            <li>
+                <span>관람시간</span>
+                <b>09:00 - 18:00</b>
+                <a>(주말,공휴일 관람시간 동일)</a>
+            </li>
+            <li>
+                <span>휴관일</span>
+                <b>매주 월요일</b>
+                (대체공휴일인 경우 화요일 휴관), 1월1일, 설날, 추석
+            </li>
+            <li>
+                <span>문의전화</span>
+                <b>041-850-6300</b>
+            </li>
+        </ul>
+        <div class="total_res"><a href=""><span class="icon"></span>통합예약 <bdo>서비스</bdo></a></div>
+    </div>
+    <header class="w100 flex">
+        <h1>
+            <a href="">
+                <img src="./img/logo.svg" alt="">
+            </a>
+        </h1>
+        <nav>
+            <ul class="flex">
+                <li><a href="">관람정보</a></li>
+                <li><a href="">전시</a></li>
+                <li><a href="">교육/행사</a></li>
+                <li><a href="">유물/학습</a></li>
+                <li><a href="">소식/참여</a></li>
+            </ul>
+        </nav>
+        <ul class="util_wrap flex">
+            <li class="lang_btn"><a href="">lang</a></li>
+            <li class="ham_btn"><a href="">ham</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="main_top">
+            <div class="search_wrap">
+                <div class="search flex">
+                    <input type="text" placeholder="무엇을 찾고 계신가요?">
+                    <input class="search_btn" type="button" value="">
+                </div>
+                <div class="hash_wrap flex">
+                    <ul class="hashtag flex">
+                        <li><a href="">#휴관일</a></li>
+                        <li><a href="">#어린이</a></li>
+                        <li><a href="">#입장시간요금</a></li>
+                        <li><a href="">#어린이체험</a></li>
+                        <li><a href="">#전시</a></li>
+                    </ul>
+                    <ul class="controller flex">
+                        <li class="prev"></li>
+                        <li class="pause"></li>
+                        <li class="next"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="w100 sec1">
+            <div class="w1420 slide_box swiper mySwiper">
+                <ul class="weather flex">
+                    <li class="w_item flex"><span></span>비</li>
+                    <li class="w_dust">미세먼지 좋음</li>
+                    <li class="w_temp">13.3°C</li>
+                    <li class="w_cha"></li>
+                </ul>
+                <div class="slide_wrap flex swiper-wrapper">
+                    <div class="slide1 w1420 swiper-slide" data-swiper-slide-index="-1">
+                        <img src="./img/PHO_20231208144844613Sj00.jpg" alt="">
+                    </div>
+                    <div class="slide2 w1420 swiper-slide" data-swiper-slide-index="0">
+                        <img src="./img/PHO_20240130184454310Oz71.jpg" alt="">
+                    </div>
+                    <div class="slide3 w1420 swiper-slide" data-swiper-slide-index="1">
+                        <img src="./img/PHO_20231208144844613Sj00.jpg" alt="">
+                    </div>
+                    <div class="slide4 w1420 swiper-slide" data-swiper-slide-index="2">
+                        <img src="./img/PHO_20240130184454310Oz71.jpg" alt="">
+                    </div>
+                </div>
+                <ul class="slide_controll flex">
+                    <li>
+                        <img class="swiper-button-prev" src="./img/left_arrow.svg" alt="">
+                    </li>
+                    <li class="pause2">
+                        <div></div>
+                    </li>
+                    <li>
+                        <img class="swiper-button-next" src="./img/right_arrow.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="w1420 flex sec2">
+            <article>
+                <div class="notice flex">
+                    <h2>박물관 소식</h2>
+                    <div class="noti_list flex">
+                        <ul class="list_dots flex">
+                            <li class="active">알림</li>
+                            <li>채용</li>
+                            <li>고시/공고</li>
+                            <li>보도자료</li>
+                        </ul>
+                        <div class="more_plus"></div>
+                    </div>
+                </div>
+                <ul class="noti_txt flex">
+                    <li>
+                        <h3>특별전시 설문조사 이벤트 당첨자</h3>
+                        <p>
+                            특별 전시 설문조사 이벤트 당첨자 명단입니다. 추첨을 통하여 100명을 선정했습니다. 설문에 응해주신 모든 분들께 감사드립니다. 문의: 041-850-6371
+                        </p>
+                        <div>2024.02.19</div>
+                    </li>
+                    <li>
+                        <h3>[당첨자 발표] 국립공주박물관 누리집 개편 이벤트 당첨자 알려드립니다.</h3>
+                        <p>
+                            국립공주박물관 누리집 개편 이벤트에 참여해주신 모든 분들께 진심으로 감사드립니다. 당첨자 명단은 첨부파일 확인 부탁드리며, 당첨되신 분들께 금일(2.8.) 오후부터
+                            모바일 쿠폰을 SMS로 순차 발송해 드릴 예정입니다. 보내주신 성원에 감사드리며 앞으로도 많은 이용 부탁드립니다.
+                        </p>
+                        <div>2024.02.08</div>
+                    </li>
+                    <li>
+                        <h3>[당첨자 발표★] 카카오톡채널 개설 이벤트! '오늘부터 친구사이'해요~</h3>
+                        <p>
+                            당첨자 명단은 첨부파일을 확인 부탁드립니다!
+                        </p>
+                        <div>2024.02.08</div>
+                    </li>
+                </ul>
+            </article>
+            <div class="popup_wrap">
+                <div>
+                    <img src="./img/PHO_20231208144953093Tt00.jpg" alt="">
+                </div>
+                <div class="popup_zone"></div>
+            </div>
+            <div class="service_wrap flex">
+                <h3><span>주요</span>서비스</h3>
+                <ul class="flex">
+                    <li class="ser_icon1 flex">
+                        <a href="">
+                            <p>통합예약</p>
+                        </a>
+                    </li>
+                    <li class="ser_icon2 flex">
+                        <a href="">
+                            <p>사이버투어</p>
+                        </a>
+                    </li>
+                    <li class="ser_icon3 flex">
+                        <a href="">
+                            <p>오시는 길</p>
+                        </a>
+                    </li>
+                    <li class="ser_icon4 flex">
+                        <a href="">
+                            <p>웹소식지</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="w100 sec3">
+            <article class="calendar w1420 flex">
+                <div class="today">
+                    <h3>20</h3>
+                    <p>오늘은 <span>개관일</span></p>
+                </div>
+                <div class="date flex">
+                    <div class="date_prev"></div>
+                    <ul class="date_wrap flex">
+                        <li>
+                            <div>15</div>
+                            <p>목</p>
+                        </li>
+                        <li>
+                            <div>16</div>
+                            <p>금</p>
+                        </li>
+                        <li>
+                            <div class="blue">17</div>
+                            <p>토</p>
+                        </li>
+                        <li>
+                            <div class="red">18</div>
+                            <p>일</p>
+                        </li>
+                        <li>
+                            <div>19</div>
+                            <p>월</p>
+                        </li>
+                        <li>
+                            <div>20</div>
+                            <p class="yellow">화</p>
+                        </li>
+                        <li>
+                            <div>21</div>
+                            <p>수</p>
+                        </li>
+                        <li>
+                            <div>22</div>
+                            <p>목</p>
+                        </li>
+                        <li>
+                            <div>23</div>
+                            <p>금</p>
+                        </li>
+                        <li>
+                            <div class="blue">24</div>
+                            <p>토</p>
+                        </li>
+                        <li>
+                            <div class="red">25</div>
+                            <p>일</p>
+                        </li>
+                        <li>
+                            <div>26</div>
+                            <p>월</p>
+                        </li>
+                        <li>
+                            <div>27</div>
+                            <p>화</p>
+                        </li>
+                        <li>
+                            <div>28</div>
+                            <p>수</p>
+                        </li>
+                        <li>
+                            <div>29</div>
+                            <p>목</p>
+                        </li>
+                    </ul>
+                    <div class="date_next"></div>
+                </div>
+                <div class="event_btn flex">
+                    <p>이달의 행사</p>
+                    <span></span>
+                </div>
+            </article>
+        </section>
+        <section class="w1420 flex sec4">
+            <div class="flex">
+                <img src="./img/920_EP_20240124181446801Fu00.jpg" alt="">
+            </div>
+            <article>
+                <div class="notice flex">
+                    <h2>교육<span>&</span>문화행사</h2>
+                    <div class="noti_list flex">
+                        <ul class="list_dots flex">
+                            <li class="active">전체</li>
+                            <li>교육</li>
+                            <li>문화행사</li>
+                        </ul>
+                        <div class="more_plus"></div>
+                    </div>
+                </div>
+                <ul class="edu_cul_wrap">
+                    <li class="">
+                        <a class="flex" href="">
+                            <div class="box edu">교육</div>
+                            <div class="edu_cul_list_wrap flex">
+                                <div class="edu_cul_list">
+                                    <div>학교단체프로그램</div>
+                                    <h4>
+                                        로비에서 즐기는 콘서트 <선율이 흐르는 박물관>
+                                    </h4>
+                                    <p>
+                                        2024.02.11 ~ 2024.02.11<span>14:00~</span></p>
+                                </div>
+                                <div class="edu_cul_arrow"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex" href="">
+                            <div class="box cul">문화</div>
+                            <div class="edu_cul_list_wrap flex">
+                                <div class="edu_cul_list">
+                                    <div>음악회</div>
+                                    <h4>
+                                        [12/22] 크리스마스★ 체코소년합창단 보니푸에리 내한 공연
+                                    </h4>
+                                    <p>2023.12.22 ~ 2023.12.22<span>19:30</span></p>
+                                </div>
+                                <div class="edu_cul_arrow2 close"><span></span></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex" href="">
+                            <div class="box cul">문화</div>
+                            <div class="edu_cul_list_wrap flex">
+                                <div class="edu_cul_list">
+                                    <div>어린이공연</div>
+                                    <h4>
+                                        [10/21] 흥미진진 과학마술콘서트
+                                    </h4>
+                                    <p>2023.10.21 ~ 2023.10.21<span>14:00 / 16:00</span></p>
+                                </div>
+                                <div class="edu_cul_arrow2 close"><span></span></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="w100 flex sec5">
+            <article>
+                <div class="exhi_wrap">
+                    <h6>exhibition</h6>
+                    <h4>상설 전시 안내</h4>
+                    <ul class="exhi_list flex">
+                        <li>
+                            <a class="dots" href="">
+                                <div class="exhi_img">
+                                    <img src="./img/ex-img1-mo.jpg" alt="">
+                                </div>
+                                <div class="flex">
+                                    <div class="floor_num">1F</div>
+                                    <p class="floor_title">웅진백제실</p>
+                                </div>
+                                <p class="floor_sub_title">무령왕의 혼이 살아 숨쉬는 공간</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="exhi_img">
+                                    <img src="./img/ex-img2-mo.jpg" alt="">
+                                </div>
+                                <div class="flex">
+                                    <div class="floor_num">1F</div>
+                                    <p class="floor_title">웅진백제 어린이 체험실</p>
+                                </div>
+                                <p class="floor_sub_title">오감으로 느끼는 어린이 체험실</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="exhi_img">
+                                    <img src="./img/ex-img3-mo.jpg" alt="">
+                                </div>
+                                <div class="flex">
+                                    <div class="floor_num">2F</div>
+                                    <p class="floor_title">충청남도 역사문화실</p>
+                                </div>
+                                <p class="floor_sub_title">충남의 역사와 문화를 한눈에 볼 수 있는 공간</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="line flex">
+                        <div></div>
+                        <span></span>
+                    </div>
+                </div>
+            </article>
+            <div class="thum_box">
+                <a href="">
+                    <div>
+                        <h4 class="flex">충청권역 수장고<span></span></h4>
+                        <p>
+                            발굴 조사된 문화재를 보관 · 관리하기 위해 건립된 충청지역
+                            국립공주·부여·청주박물관이 함께 사용하는 권역수장고입니다.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="w100 sec6">
+            <div class="w1420 flex review_wrap">
+                <h2>다녀온 이야기</h2>
+                <div class="flex rev_count">
+                    <div><span>2,964</span>건의 후기</div>
+                    <div class="more_plus"></div>
+                </div>
+            </div>
+            <article class="w1420 flex rev_txt">
+                <figure>
+                    <a href="">
+                        <img src="./img/BBS_20240219155732699Sm50.jpg" alt="">
+                        <figcaption>
+                            <h3>
+                                진묘수야, 올 한 해를 잘 부탁해!
+                            </h3>
+                            <p>
+                                국립 공주 박물관 후기
+                                2024. 02. 01. 방문
+                                부부, 8세, 6세 자매
+
+                                아이들이 어릴 적에는 주로 바다를 낀 펜션, 리조트로 여행을 떠났다.
+                                그러다 작년 여름, 신라의 수도 경주로의 첫 유적지 여행. 결과는 성.공.적!
+                                마냥 어린 아이라고만 생각했던 7세, 5세 자매들은 천마총, 첨성대와 시내 곳곳에서 볼 수 있는 푸른 잔디가 있는 커다란 무덤(릉)에 큰 관심을 보였다.
+
+                                이번 겨울엔 백제의 유적지가 모여있는 공주 여행을 계획 해 보았다.
+                                방문 전 가볼만 한 유적지를 찾는데, 역사 문외한인 나는 백제의 수많은 왕들 중 왜 "무령왕릉"만이 유적지로 남아있는지 알 리가 없었다.
+                                그리고 이름만 보고서는 유물들의 "냉장고"라고 생각했던 수장고 방문을 기대하며 공주로 향했다.
+
+                                국립 공주 박물관에 도착해 맨 처음은 어린이 체험관으로 향했다.
+                                어린이 체험관에서 아이들과 함께 반짝이는 금귀걸이들을 디자인 해 봤고, 전시관에서 무덤에서 출토된 금귀걸이들의 실제 모습을 보니 더 흥미로웠다. 아이들에게
+                                어렵지 않게 유물을 알아 볼 수 있는 게임, 색칠 활동이 있어 편하게 전시관을 관람할 수 있었다.
+
+                                &lt;무령왕릉의 장례&gt; 특별 전시관으로 자리를 옮겨, 찬찬히 전시관을 관람해봤다.
+                                단순하게는 백제시대 무령왕의 무덤에서, 상상력으로 이야기를 입히니 아버지(왕)을 떠나보내며 장례를 준비했을 수 십, 수 백명의 가족과 신하들의 슬픔이
+                                느껴졌다.
+
+                                온전하고 좋은 제기들만 무덤에 매장되어 있을 거라고 생각했는데 생과 사의 연결고리를 끊는다는 의미의 "훼기"라는 개념도 알게 되었다.
+                                무령왕릉만이 고대 왕들 중 이름이 남아 있는 유일한 무덤이라는 사실에 놀랐고, 10여 년 전 공무원 시험을 준비하며 외웠던 공주 송산리 고분군이 바로
+                                무령왕릉의 무덤이라는 사실에 또 한 번 아차! 싶었다.
+
+                                본관 관람을 마치고 옆자리에 자리잡은 수장고로 향했다. 냉장고인 줄 알았던 수장고. 여러 층으로 된 그 규모에 깜짝 놀랐다. 유물들을 적절한 온도, 습도를
+                                유지하며 거대한 규모로 보존한다는 사실에 또 한 번 놀랐다.
+
+                                박물관을 나오며 &lt;어린공주 그림일기&gt;와 &lt;진묘수 상자 접기&gt; 활동지를 챙겨 숙소인 공주 산림 휴양마을에 들어갔다. 박물관을 나와서 연계
+                                할 수 있는 활동들이 있어 박물관에서 본 것이 잊혀지지 않고 이어지는 점 또한 좋았다.
+
+                                다음 날 방문한 무령왕릉에서는 국립 공주 박물관에서 보았던 유물들을 다시 보면서 박물관에서 보았던 내용들을 되새겨 보는 시간을 가질 수 있었다.
+
+                                국립 공주 박물관 관람을 통해 자라나는 아이들을 키우며 엄마로서 참 아는 것이 없고, 함께 알아가야 할 것들이 많다는 생각을 다시 한 번 해 보았다. 아이들
+                                덕분에 엄마도 하나씩 배워간다!
+
+                                23년에 가족들에게 힘든 일들이 많았는데, 무령왕릉을 지켜주었던 "진묘수"가 우리 가족을, 나아가 우리나라를 지켜주는 평안한 한 해가 되길 기도 해 본다.
+                            </p>
+                            <ul class="flex rev_name">
+                                <li>오명인</li>
+                                <li>2024.02.19</li>
+                            </ul>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <img src="./img/BBS_20240218140325341Kv31.jpg" alt="">
+                        <figcaption>
+                            <h3>
+                                무령왕의 장례 마지막 날
+                            </h3>
+                            <p>
+                                공주에 와본지가 언제인지... 기억조차 가물거린다. 공주에 멋진 곳이 있어 예약하고 오는 길에 시간이 남았다. 남편이 공주박물관에 들러보자고 하여 아무
+                                생각없이 찾아왔다. 내부 주차장이 만차라서 맞은편 주차장을 이용해야 했다. 이게 웬일? 만차될 정도로 서럼이 많다고? 차량을 통제하나? 하며 들어왔다. 아니
+                                웬 관람객이 이렇게 많지? 하며... 박물관 앞을 차지한 동물이 신기해서 한참 바라봤다. 안에 들어가면 이 동물에 대해 알 수 있겠지? 우선 사람이 많은
+                                이유를 알 갓 같았다. 무령왕의 장례라는 특별 전시 마지막 날인 거다. 포스터 디자인이며 내부 디자인이 참 멋지다. 뜬금없지만 예쁜 공주에서 니가 젤 예뻐
+                                부스에서 예쁜 딸 사진을 찍어줬다. 막 찍어도 다리가 길게 찍혀서 흐뭇해 하며 들어가서는 웅장한 장례절차와 유물들, 목관 등 과거 속으로 급히 몰입하여
+                                돌아봤다. 아이들이 모두 자라 성인이 되어서인지 역사적 서실보다는 디자인에 더 관심이 갔다. 십이간지 그림에서 가족들의 띠 동물을 찾아보는 게 너무
+                                흥미로웠다. 자세히 읽어보고자 리플렛과 아이들 활동 노트를 챙겼다. 기념품 가게가 눈에 들어왔다. 작고 소중한 기념품들이 가격도 착해서 소장하고 싶은 욕구가
+                                스멀스멀~~ 공주는 참 유구한 역사가 오늘날까지 살아 숨쉬는 도시였음을 오랜만에 느끼며 예약해둔 멋진 맛집으로 고고~~!!
+                            </p>
+                            <ul class="flex">
+                                <li>강성란</li>
+                                <li>2024.02.18</li>
+                            </ul>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <img src="./img/BBS_20240215121941288Vw30.jpg" alt="">
+                        <figcaption>
+                            <h3>
+                                딸과의데이트♡
+                            </h3>
+                            <p>
+                                간만에 딸과 방학을 맞아 뜻깊은 박물관체험에나섰습니다 비도오고 날씨가 별로였지만 사람도 없어서 백제 어린이체험실에서 좋은 체험도 하고 전시관에서 백제의 유물을
+                                보면서 좋은 공부가 되면서 딸과 유익한시간보냈어요 공주지역에 살고있음을 감사하게생각하네요 ㅎ 자주 와야겠어용~^^
+                            </p>
+                            <ul class="flex">
+                                <li>권선희</li>
+                                <li>2024.02.15</li>
+                            </ul>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <img src="./img/BBS_20240215075729454Uf20.jpg" alt="">
+                        <figcaption>
+                            <h3>박물관의 재미를 흠뻑 느끼고 왔어요</h3>
+                            <p>
+                                공주 여행중 들렀어요~ 근데 진짜 대박이에요! 탁 트인 로비에서 기분 좋게 입장해서 실감관부터 관람했는데 어마어마 하네요 전 개인적으로는 국립중앙박물관
+                                실감관보다 재밌게 봤어요ㅎㅎ 안본 사람 없게 해주세요. 상설전시실은 유퀴즈 퀴즈 프로그램이 있어서 문제 풀며 전시를 보니 아이의 참여율이 훅 올라가네요! 사실
+                                어른도 재밌었답니다ㅎㅎ
+
+                                1500년전 무령왕의 장례 특별전시 너무 좋았고요 박물관 곳곳에서 대표유물들 만져볼 수 있게 해둔 건 정말 좋아요! 어린이 박물관도 작지만 알차게 꾸며져
+                                있어서 아이들 놀기에도 참 좋았습니다 진묘수는 진짜 넘 귀여워요.
+
+                                그리고 박물관 뒤편 보이는 수장고 공간은 그냥 감동이었답니다 공주박물관 오시면 꼭 보고 가세요 저도 주변에 마구 추천하려고요!
+
+                                이번에 국립공주박물관 방문하고 다시금 공주에 대한 인식이 많이 바뀌게 된 것 같아요 가까이 살면 자주 왔을텐데 아쉽지만 다음번 공주오게 되면 꼭 또
+                                들러보려구요~!
+                            </p>
+                            <ul class="flex">
+                                <li>이경선</li>
+                                <li>2024.02.15</li>
+                            </ul>
+                        </figcaption>
+                    </a>
+                </figure>
+            </article>
+        </section>
+    </main>
+    <footer class="w100">
+        <div class="w1420 f_top flex">
+            <ul class="f_menu flex">
+                <li class="f_menu_f"><a href="">개인정보처리방침</a></li>
+                <li><a href="">정보공개</a></li>
+                <li><a href="">충청권역 수장고</a></li>
+                <li><a href="">저작권정책</a></li>
+                <li><a href="">이메일집단수집거부</a></li>
+                <li><a href="">영상정보처리기기 운영관리방침</a></li>
+            </ul>
+            <ul class="sns_wrap flex">
+                <li><a class="fb" href=""></a></li>
+                <li><a class="in" href=""></a></li>
+                <li><a class="nb" href=""></a></li>
+                <li><a class="yu" href=""></a></li>
+            </ul>
+        </div>
+        <div class="w1420 f_bot flex">
+            <div>
+                <p>
+                    [32535] 충청남도 공주시 관광단지길 34 (웅진동 360번지) <span class="tel">Tel. 041-850-6300</span>
+                </p>
+                <p>COPYRIGHT 2024 GONGJU NATIONAL MUSEUM.ALL <span>RIGHTS RESERVED.</span></p>
+            </div>
+            <ul class="family_site_wrap flex">
+                <li>
+                    <select>
+                        <option>관련사이트</option>
+                        <option>국립익산박물관</option>
+                        <option>국립나주박물관</option>
+                        <option>국립춘천박물관</option>
+                        <option>국립제주박물관</option>
+                        <option>국립김해박물관</option>
+                        <option>국립청주박물관</option>
+                        <option>국립진주박물관</option>
+                        <option>국립부여박물관</option>
+                        <option>국립대구박물관</option>
+                        <option>국립전주박물관</option>
+                        <option>국립광주박물관</option>
+                        <option>국립경주박물관</option>
+                        <option>국립중앙박물관</option>
+                    </select>
+                </li>
+                <li><img src="./img/wa_ico.png" alt=""></li>
+                <li><a href=""><img src="./img/gonggong.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          centeredSlides: true,
+          loop: true,
+          autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+      <script src="js/museum.js"></script>
+</body>
+
+</html>
